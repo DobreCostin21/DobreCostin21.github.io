@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --background: rgb(207, 0, 0);
+}
+
+label {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(12px 1.75vw, 18px);
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s linear;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
+
+input[type="range"] {
+  width: min(250px, 100%);
+}
+
+#openColorPicker {
+  color: #333;
+
+  transition: all 0.3s ease-out;
+}
+
+#openColorPicker:hover {
+  color: rgb(31, 31, 31);
+}
+
+#colorpicker {
+  width: min(500px, 90%);
+  height: 100px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease-out;
+}
